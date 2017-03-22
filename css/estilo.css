@@ -1,0 +1,104 @@
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
+}
+
+/* Arreglemos los cuerpos principales */
+
+h1,h2,h3,h4,h5,h6{font-family: 'anton', Georgia, serif; margin:0.25em 0;}
+h1,h2,h3,h4{font-weight: 400;}
+h4,h5,h6{font-weight: 700;}
+h1{font-size:2.6em; letter-spacing:0.025em; line-height: 1.4em; word-spacing: 0.05em;}
+h2{font-size:2.3em; letter-spacing:0.025em; line-height: 1.4em; word-spacing: 0.1em;}
+h3{font-size:1.8em; letter-spacing:0.025em; line-height: 1.4em; word-spacing: 0.15em;}
+h4{font-size:1.45em; letter-spacing:0.1em; line-height: 1.6em; word-spacing: 0.2em;}
+h5{font-size:1.2em; letter-spacing:0.15em; line-height: 1.8em; word-spacing: 0.25em;}
+h6{font-size:1.1em; letter-spacing:0.16em; text-transform: capitalize; line-height: 1.6em;}
+p{
+  font-size:1em;
+  letter-spacing:0;
+  line-height: 1.6;
+  margin:0.75em 0;
+}
+small{
+  font-size:80%;
+  letter-spacing: 0.05em;
+}
+
+#container{
+  margin:2em;
+  padding:1em;
+}
+
+header{width:96%; padding:2%; clear:both;}
+section{width:66%; padding:2%; float:left;}
+aside{width:26%; padding:2%; float:left;}
+footer{width:96%; padding:2%;}
+
+/* Definamos algunas excepciones para hacerla responsive */
+
+@media screen and (orientation:portrait){
+  body{
+  background: -moz-linear-gradient(left, rgba(13,19,43,1) 0%, rgba(41,31,56,1) 100%);
+    color: white;
+    
+}
+
+}
+
+  h1{font-size:2.1em;}
+  h2{font-size:1.9em;}
+  h3{font-size:1.6em;}
+  h4{font-size:1.3em;}
+  h5{font-size:1.1em;}
+  h6{font-size:0.9em;}
+  p{
+    line-height: 1.4;
+    margin:0.9em 0;
+  }
+
+  section{width:96%; padding:2%; clear:both;}
+  aside{width:96%; padding:2%; clear:both;}
+
+}
+
+/* continuemos con lo que serviará para todos los casos */
+
+a{color:hsl(15, 100%, 30%); text-decoration: underline;}
+|
+a:hover{color:hsl(15, 100%, 40%); text-decoration: none;}
+
+a:active{color:hsl(15, 100%, 50%); text-decoration: none;}
+
+:hover{transition: all ease 1s;}
+
+article{padding-bottom:1em; border-bottom:1px dotted black; margin-bottom:2em;}
+
+cite{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:80%;
+  font-weight: 700;
+  color: #233a5e
+
+}
+
+ul{
+  margin:0.5em 0;
+  list-style:disc;
+  list-style-position: inside;
+}
+
+ul li{
+  margin:0.5em 1em 0.5em 0;
+  line-height: 1.4;
+}
+
+dl{
+  margin:0.75em 0;
+  line-height: 1.5;
+}
+
+dl dt{
+  margin-bottom:0.5em;
+  font-weight: 800;
+}
